@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+<script src="script.js"></script>
+
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <!-- NAVBAR NAVBAR NAVBAR NAVBAR -->
+
+<!-- OUTER FRAME -->
+<div class="min-h-screen p-4">
+  <div class="min-h-[65vh] max-w-[1330px] mx-auto bg-[#f7f7f7] rounded-[32px] border shadow-sm grid-bg">
+
+    <!-- NAVBAR -->
+   <!-- NAVBAR -->
+<nav class="w-full sticky top-0 z-50 bg-transparent flex justify-center">
+  <div class="bg-white border shadow px-6 py-4 max-w-5xl w-full mt-6">
+
+    <!-- Top bar -->
+    <div class="flex items-center justify-between">
+
+      <!-- Logo -->
+      <div class="flex items-center gap-3">
+        <div class="w-9 h-9 rounded-full bg-orange-500 flex items-center justify-center text-white font-bold">
+          ★
+        </div>
+        <span class="font-semibold">Victor Hanford.</span>
+      </div>
+
+      <!-- Desktop Menu -->
+      <ul class="hidden md:flex gap-8  font-medium">
+        <li>About</li>
+        <li>Works</li>
+        <a href="assets/Meet_Goswami_Resume.pdf"><li class="hover:text-gray-600 cursor-pointer">Download CV</li></a> 
+
+      </ul>
+
+      <!-- Mobile Toggle -->
+      <button id="toggleBtn" class="md:hidden text-2xl font-bold">
+        <span id="iconOpen">☰</span>
+        <span id="iconClose" class="hidden">✕</span>
+      </button>
+
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobileMenu" class="hidden mt-4 border-t pt-4 md:hidden">
+      <ul class="flex flex-col gap-4 text-sm">
+        <li>About</li>
+        <li>Works</li>
+        <li>Services</li>
+        <li>Playground</li>
+        <li>Testimonials</li>
+      </ul>
+    </div>
+
+  </div>
+</nav>
+
+
+<!-- HERO SECTION HERO SECTION HERO SECTION HERO SECTION HERO SECTION  -->
+<section id="heroSection" class="hero-container max-w-[1330px] mx-auto flex flex-col items-center justify-center text-center px-6 py-24">
+
+  <p class="text-sm text-gray-600 mb-4 relative z-20">
+    Heya! I'm Victor Hanford 👋
+  </p>
+
+  <h1 class="text-4xl md:text-6xl font-extrabold leading-tight max-w-4xl relative z-20">
+    Product Designer <br class="hidden sm:block" />
+    + Developer based in <span class="relative inline-block">
+      LA
+      <span class="absolute -bottom-2 left-0 w-full h-1 bg-orange-400 rounded-full"></span>
+    </span>
+  </h1>
+
+  <!-- Draggable Elements Container -->
+  <div id="draggableContainer" class="absolute inset-0 pointer-events-none">
+    <!-- Elements will be added here by JavaScript -->
+  </div>
+
+  <!-- Buttons -->
+  <div class="mt-10 flex flex-col sm:flex-row gap-4 relative z-20">
+    <a href="#"
+      class="inline-flex items-center gap-2
+            px-6 py-3
+            rounded-xl
+            bg-orange-500 text-white font-medium
+            shadow-[0_8px_30px_rgba(255,153,51,0.55)]
+            hover:shadow-[0_10px_40px_rgba(255,153,51,0.7)]
+            transition-all duration-300">
+      See Works
+    </a>
+  </div>
+
+</section>
+</div>
+</div>
+
+
+
+<!-- ABOUT ME ABOUT ME ABOUT ME ABOUT ME -->
+
+
+  <section class="max-w-5xl mx-auto px-6 py-20 text-center">
+
+    <!-- Images -->
+    <div class="relative flex justify-center items-center mb-12">
+
+      <!-- Left Image -->
+      <div
+        class="relative z-10 bg-white rounded-xl shadow-lg p-2 float"
+        style="--rotate:-6deg;"
+      >
+        <img
+          src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d"
+          alt="Portrait"
+          class="w-48 h-48 object-cover rounded-lg"
+        />
+      </div>
+
+      <!-- Right Image -->
+      <div
+        class="relative bg-white rounded-xl shadow-lg p-2 -ml-10 float float-delay"
+        style="--rotate:6deg;"
+      >
+        <img
+          src="https://images.unsplash.com/photo-1519389950473-47ba0277781c"
+          alt="Workspace"
+          class="w-48 h-48 object-cover rounded-lg"
+        />
+      </div>
+
+      <!-- Decorative icons -->
+      <span class="absolute -left-6 -top-6 text-yellow-400 text-3xl animate-bounce">✨</span>
+      <span class="absolute -right-6 top-6 text-purple-400 text-xl animate-pulse">•••</span>
+    </div>
+
+    <!-- Heading -->
+    <h1 class="text-4xl md:text-5xl font-bold text-black leading-tight">
+      <span class="relative inline-block">
+        Reserved,
+        <span class="absolute left-0 -bottom-1 w-full h-1 bg-orange-500"></span>
+      </span>
+      <br />
+      But Far From Ordinary!
+    </h1>
+
+    <!-- Description -->
+    <p class="mt-8 text-gray-600 text-lg max-w-3xl mx-auto leading-relaxed">
+      Hailing from Canada and thriving in the heart of LA, I’ve spent the
+      last 7 years partnering with visionary founders and VC-backed
+      startups to craft brands, websites, apps, and marketing that leave a
+      lasting impression.
+    </p>
+
+    <p class="mt-6 text-gray-600 text-lg max-w-3xl mx-auto leading-relaxed">
+      My mission? To transform big ideas into compelling digital
+      experiences that captivate users, elevate products, and catch the
+      eyes of investors. Together, we don’t just tell stories – we create
+      moments that make your brand unforgettable.
+    </p>
+
+  </section>
+
+
+
+  
+
+<!-- PORTFOLIO  PORTFOLIO PORTFOLIO PORTFOLIO PORTFOLIO PORTFOLIO  -->
+
+  <section class="max-w-[1330px] mx-auto px-6 py-24">
+
+    <!-- Heading -->
+    <div class="text-center mb-16">
+      <div class="flex justify-center gap-2 mb-4 text-3xl">
+        🤩 😍
+      </div>
+
+      <h2 class="text-4xl md:text-5xl font-bold text-black leading-tight">
+        <span class="relative inline-block">
+          Showcase of My,
+          <span class="absolute left-0 -bottom-1 w-full h-1 bg-orange-500"></span>
+        </span>
+        <br />
+        Masterpieces
+      </h2>
+    </div>
+
+    <!-- SHOWCASE CARD SHOWCASE CARD SHOWCASE CARD SHOWCASE CARD -->
+
+<section class="max-w-[1440px] mx-auto px-6 py-20">
+
+  <!-- CARD 1 CARD 1 CARD 1 CARD 1 CARD 1 -->
+ <div class="relative space-y-[140px]">
+
+  <!-- CARD 1 -->
+  <div class="sticky top-24 z-10
+              border border-[#E4E4E4] rounded-[40px]
+              shadow-[0_10px_40px_rgba(0,0,0,0.06)]
+              bg-gradient-to-b from-[#FAFAFA] to-[#F5F5F5]">
+
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 p-10 lg:p-14">
+      <!-- LEFT -->
+      <div class="relative flex items-center">
+        <div class="absolute inset-0 opacity-[0.035]"
+             style="background-image:
+             linear-gradient(#000 1px, transparent 1px),
+             linear-gradient(90deg, #000 1px, transparent 1px);
+             background-size:48px 48px;">
+        </div>
+
+        <div class="relative z-10 max-w-md">
+          <h2 class="text-[28px] font-semibold mb-4">Vendor App</h2>
+          <p class="text-[#9C9C9C] mb-6">🇪🇪 Estonia, Self-funded</p>
+          <p class="text-[#5F5F5F] leading-[1.8] mb-8">
+           A platform to help users connect, share knowledge, and collaborate on ideas with the help of AI-powered insights. Users can join conversations, brainstorm, and access curated content tailored to their professional and personal interests.
+          </p>
+          <a href="vendor-app-dashboard.html"   class="inline-flex px-6 py-3 bg-orange-500 text-white rounded-xl shadow-lg">
+            See Case Study
+          </a>
+        </div>
+      </div>
+
+      <!-- RIGHT -->
+      <div class="flex items-center justify-center">
+        <img src="assets/imgi_12_qMJ1eOGI6KqH3EjLwj4wTqRUT0.png"
+             class="rounded-[24px] shadow-2xl" />
+      </div>
+    </div>
+  </div>
+
+  <!-- CARD 2 -->
+  <div class="sticky top-32 z-20
+              border border-[#E4E4E4] rounded-[40px]
+              shadow-[0_10px_40px_rgba(0,0,0,0.06)]
+              bg-gradient-to-b from-[#FAFAFA] to-[#F5F5F5]">
+  <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 p-10 lg:p-14">
+      <!-- LEFT -->
+      <div class="relative flex items-center">
+        <div class="absolute inset-0 opacity-[0.035]"
+             style="background-image:
+             linear-gradient(#000 1px, transparent 1px),
+             linear-gradient(90deg, #000 1px, transparent 1px);
+             background-size:48px 48px;">
+        </div>
+
+        <div class="relative z-10 max-w-md">
+          <h2 class="text-[28px] font-semibold mb-4">UPOS Landing Page</h2>
+          <p class="text-[#9C9C9C] mb-6">🇪🇪 Estonia, Self-funded</p>
+          <p class="text-[#5F5F5F] leading-[1.8] mb-8">
+           A platform to help users connect, share knowledge, and collaborate on ideas with the help of AI-powered insights. Users can join conversations, brainstorm, and access curated content tailored to their professional and personal interests.
+
+
+          </p>
+          <a class="inline-flex px-6 py-3 bg-orange-500 text-white rounded-xl shadow-lg">
+            See Case Study
+          </a>
+        </div>
+      </div>
+
+      <!-- RIGHT -->
+      <div class="flex items-center justify-center">
+        <img src="assets/imgi_12_qMJ1eOGI6KqH3EjLwj4wTqRUT0.png"
+             class="rounded-[24px] shadow-2xl" />
+      </div>
+    </div>
+  </div>
+
+
+    <!-- CARD 3 -->
+
+   <div class="sticky top-32 z-20
+              border border-[#E4E4E4] rounded-[40px]
+              shadow-[0_10px_40px_rgba(0,0,0,0.06)]
+              bg-gradient-to-b from-[#FAFAFA] to-[#F5F5F5]">
+  <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 p-10 lg:p-14">
+      <!-- LEFT -->
+      <div class="relative flex items-center">
+        <div class="absolute inset-0 opacity-[0.035]"
+             style="background-image:
+             linear-gradient(#000 1px, transparent 1px),
+             linear-gradient(90deg, #000 1px, transparent 1px);
+             background-size:48px 48px;">
+        </div>
+
+        <div class="relative z-10 max-w-md">
+          <h2 class="text-[28px] font-semibold mb-4">Krishivatech Landing Page</h2>
+          <p class="text-[#9C9C9C] mb-6">🇪🇪 Estonia, Self-funded</p>
+          <p class="text-[#5F5F5F] leading-[1.8] mb-8">
+           A platform to help users connect, share knowledge, and collaborate on ideas with the help of AI-powered insights. Users can join conversations, brainstorm, and access curated content tailored to their professional and personal interests.
+
+
+          </p>
+          <a class="inline-flex px-6 py-3 bg-orange-500 text-white rounded-xl shadow-lg">
+            See Case Study
+          </a>
+        </div>
+      </div>
+
+      <!-- RIGHT -->
+      <div class="flex items-center justify-center">
+        <img src="assets/imgi_12_qMJ1eOGI6KqH3EjLwj4wTqRUT0.png"
+             class="rounded-[24px] shadow-2xl" />
+      </div>
+    </div>
+  </div>
+
+
+      <!-- CARD 4 -->
+
+   <div class="sticky top-32 z-20
+              border border-[#E4E4E4] rounded-[40px]
+              shadow-[0_10px_40px_rgba(0,0,0,0.06)]
+              bg-gradient-to-b from-[#FAFAFA] to-[#F5F5F5]">
+  <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 p-10 lg:p-14">
+      <!-- LEFT -->
+      <div class="relative flex items-center">
+        <div class="absolute inset-0 opacity-[0.035]"
+             style="background-image:
+             linear-gradient(#000 1px, transparent 1px),
+             linear-gradient(90deg, #000 1px, transparent 1px);
+             background-size:48px 48px;">
+        </div>
+
+        <div class="relative z-10 max-w-md">
+          <h2 class="text-[28px] font-semibold mb-4">Nirali Food Machinery App</h2>
+          <p class="text-[#9C9C9C] mb-6">🇪🇪 Estonia, Self-funded</p>
+          <p class="text-[#5F5F5F] leading-[1.8] mb-8">
+           A platform to help users connect, share knowledge, and collaborate on ideas with the help of AI-powered insights. Users can join conversations, brainstorm, and access curated content tailored to their professional and personal interests.
+
+
+          </p>
+          <a class="inline-flex px-6 py-3 bg-orange-500 text-white rounded-xl shadow-lg">
+            See Case Study
+          </a>
+        </div>
+      </div>
+
+      <!-- RIGHT -->
+      <div class="flex items-center justify-center">
+        <img src="assets/imgi_12_qMJ1eOGI6KqH3EjLwj4wTqRUT0.png"
+             class="rounded-[24px] shadow-2xl" />
+      </div>
+    </div>
+  </div>
+
+
+      <!-- CARD 5 -->
+
+   <div class="sticky top-32 z-20
+              border border-[#E4E4E4] rounded-[40px]
+              shadow-[0_10px_40px_rgba(0,0,0,0.06)]
+              bg-gradient-to-b from-[#FAFAFA] to-[#F5F5F5]">
+  <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 p-10 lg:p-14">
+      <!-- LEFT -->
+      <div class="relative flex items-center">
+        <div class="absolute inset-0 opacity-[0.035]"
+             style="background-image:
+             linear-gradient(#000 1px, transparent 1px),
+             linear-gradient(90deg, #000 1px, transparent 1px);
+             background-size:48px 48px;">
+        </div>
+
+        <div class="relative z-10 max-w-md">
+          <h2 class="text-[28px] font-semibold mb-4">Vendor Web Dashboard</h2>
+          <p class="text-[#9C9C9C] mb-6">🇪🇪 Estonia, Self-funded</p>
+          <p class="text-[#5F5F5F] leading-[1.8] mb-8">
+           A platform to help users connect, share knowledge, and collaborate on ideas with the help of AI-powered insights. Users can join conversations, brainstorm, and access curated content tailored to their professional and personal interests.
+
+
+          </p>
+          <a class="inline-flex px-6 py-3 bg-orange-500 text-white rounded-xl shadow-lg">
+            See Case Study
+          </a>
+        </div>
+      </div>
+
+      <!-- RIGHT -->
+      <div class="flex items-center justify-center">
+        <img src="assets/imgi_12_qMJ1eOGI6KqH3EjLwj4wTqRUT0.png"
+             class="rounded-[24px] shadow-2xl" />
+      </div>
+    </div>
+  </div>
+
+      <!-- CARD 6 -->
+ <div class="sticky top-32 z-20
+              border border-[#E4E4E4] rounded-[40px]
+              shadow-[0_10px_40px_rgba(0,0,0,0.06)]
+              bg-gradient-to-b from-[#FAFAFA] to-[#F5F5F5]">
+  <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 p-10 lg:p-14">
+      <!-- LEFT -->
+      <div class="relative flex items-center">
+        <div class="absolute inset-0 opacity-[0.035]"
+             style="background-image:
+             linear-gradient(#000 1px, transparent 1px),
+             linear-gradient(90deg, #000 1px, transparent 1px);
+             background-size:48px 48px;">
+        </div>
+
+        <div class="relative z-10 max-w-md">
+          <h2 class="text-[28px] font-semibold mb-4">UPOS Dashboard</h2>
+          <p class="text-[#9C9C9C] mb-6">🇪🇪 Estonia, Self-funded</p>
+          <p class="text-[#5F5F5F] leading-[1.8] mb-8">
+           A platform to help users connect, share knowledge, and collaborate on ideas with the help of AI-powered insights. Users can join conversations, brainstorm, and access curated content tailored to their professional and personal interests.
+
+
+          </p>
+          <a class="inline-flex px-6 py-3 bg-orange-500 text-white rounded-xl shadow-lg">
+            See Case Study
+          </a>
+        </div>
+      </div>
+
+      <!-- RIGHT -->
+      <div class="flex items-center justify-center">
+        <img src="assets/imgi_12_qMJ1eOGI6KqH3EjLwj4wTqRUT0.png"
+             class="rounded-[24px] shadow-2xl" />
+      </div>
+    </div>
+  </div>
+
+      <!-- CARD 7 -->
+
+<div class="sticky top-32 z-20
+              border border-[#E4E4E4] rounded-[40px]
+              shadow-[0_10px_40px_rgba(0,0,0,0.06)]
+              bg-gradient-to-b from-[#FAFAFA] to-[#F5F5F5]">
+  <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 p-10 lg:p-14">
+      <!-- LEFT -->
+      <div class="relative flex items-center">
+        <div class="absolute inset-0 opacity-[0.035]"
+             style="background-image:
+             linear-gradient(#000 1px, transparent 1px),
+             linear-gradient(90deg, #000 1px, transparent 1px);
+             background-size:48px 48px;">
+        </div>
+
+        <div class="relative z-10 max-w-md">
+          <h2 class="text-[28px] font-semibold mb-4">Nirali Food Web Dashboard</h2>
+          <p class="text-[#9C9C9C] mb-6">🇪🇪 Estonia, Self-funded</p>
+          <p class="text-[#5F5F5F] leading-[1.8] mb-8">
+           A platform to help users connect, share knowledge, and collaborate on ideas with the help of AI-powered insights. Users can join conversations, brainstorm, and access curated content tailored to their professional and personal interests.
+
+
+          </p>
+          <a class="inline-flex px-6 py-3 bg-orange-500 text-white rounded-xl shadow-lg">
+            See Case Study
+          </a>
+        </div>
+      </div>
+
+      <!-- RIGHT -->
+      <div class="flex items-center justify-center">
+        <img src="assets/imgi_12_qMJ1eOGI6KqH3EjLwj4wTqRUT0.png"
+             class="rounded-[24px] shadow-2xl" />
+      </div>
+    </div>
+  </div>
+
+
+</div>
+
+
+
+</section>
+  </section>
+
+
+<!-- TOOLS & TECHNOLOGY  TOOLS & TECHNOLOGY TOOLS & TECHNOLOGY  -->
+<section class="relative overflow-hidden mx-auto  px-6 py-24">
+
+    <!-- Gradient Background -->
+    <div class="absolute inset-0 bg-gradient-to-r from-[#6D28D9] via-[#8B5CF6] to-[#C4B5FD]"></div>
+
+    <!-- Grid Overlay -->
+    <div
+      class="absolute inset-0 opacity-20"
+      style="
+        background-image:
+          linear-gradient(rgba(255,255,255,0.25) 1px, transparent 1px),
+          linear-gradient(90deg, rgba(255,255,255,0.25) 1px, transparent 1px);
+        background-size: 48px 48px;
+      "
+    ></div>
+
+    <!-- Content -->
+    <div class="relative z-10 max-w-7xl mx-auto px-6 py-20 text-center">
+
+      <!-- Heading -->
+      <h2 class="text-white text-2xl sm:text-3xl font-semibold mb-12">
+        Powered by GGCS Products
+      </h2>
+
+      <!-- Pills -->
+      <div class="flex flex-wrap justify-center gap-4">
+
+        <!-- Pill -->
+        <div class="flex items-center gap-3 px-6 py-3 rounded-full border border-white/40 text-white backdrop-blur-sm">
+          <span class="w-6 h-6 rounded-full bg-blue-500 flex items-center justify-center text-xs font-bold">
+            ⚙
+          </span>
+          EduCore 360
+        </div>
+
+        <div class="flex items-center gap-3 px-6 py-3 rounded-full border border-white/40 text-white backdrop-blur-sm">
+          <span class="w-6 h-6 rounded-full bg-blue-600 flex items-center justify-center text-xs font-bold">
+            🎓
+          </span>
+          EduSphere
+        </div>
+
+        <div class="flex items-center gap-3 px-6 py-3 rounded-full border border-white/40 text-white backdrop-blur-sm">
+          <span class="w-6 h-6 rounded-full bg-red-500 flex items-center justify-center text-xs font-bold">
+            📈
+          </span>
+          Restaurant Revenue +
+        </div>
+
+        <div class="flex items-center gap-3 px-6 py-3 rounded-full border border-white/40 text-white backdrop-blur-sm">
+          <span class="w-6 h-6 rounded-full bg-emerald-500 flex items-center justify-center text-xs font-bold">
+            📍
+          </span>
+          LocalPulse
+        </div>
+
+        <div class="flex items-center gap-3 px-6 py-3 rounded-full border border-white/40 text-white backdrop-blur-sm">
+          <span class="w-6 h-6 rounded-full bg-fuchsia-500 flex items-center justify-center text-xs font-bold">
+            💊
+          </span>
+          PharmaSphere360
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+
+
+<!-- FOOTER FOOTER FOOTER FOOTER FOOTER -->
+
+
+ <section class="max-w-[1330px] mx-auto mb-12">
+
+
+  <!-- Outer Card -->
+  <div class="w-full max-w-[1400px] bg-white rounded-[32px] border shadow-lg relative overflow-hidden">
+
+    <!-- Background grid -->
+    <div class="absolute inset-0 bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:24px_24px] opacity-30"></div>
+
+    <!-- Main Content -->
+    <div class="relative z-10 flex flex-col items-center justify-center text-center px-6 py-28">
+
+      <h1 class="text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight">
+        Hello@victor.design
+      </h1>
+
+      <p class="mt-6 max-w-2xl text-gray-600 text-sm sm:text-base leading-relaxed">
+        Based in LA, I craft impactful brands, websites, and apps for visionary
+        founders and startups, turning big ideas into unforgettable digital
+        experiences.
+      </p>
+
+      <!-- CTA -->
+      <button
+        class="mt-10 inline-flex items-center gap-2 rounded-xl bg-orange-500 px-6 py-3 text-white font-medium
+               shadow-[0_10px_30px_rgba(255,153,51,0.6)]
+               hover:shadow-[0_12px_40px_rgba(255,153,51,0.75)]
+               transition-all duration-300"
+      >
+        <span class="w-2 h-2 bg-white rounded-full"></span>
+        Book a call →
+      </button>
+
+      <p class="mt-12 text-xs text-gray-400">
+        2025. Made with love by Basit A. Khan
+      </p>
+    </div>
+
+    <!-- Bottom Bar -->
+    <div class="relative z-10 flex items-center justify-between px-6 py-5">
+
+      <!-- Left Nav -->
+      <ul class="flex gap-6 font-medium">
+        <li class="hover:text-gray-600 cursor-pointer">About</li>
+        <li class="hover:text-gray-600 cursor-pointer">Works</li>
+        <a href="assets/Meet_Goswami_Resume.pdf"><li class="hover:text-gray-600 cursor-pointer">Download CV</li></a> 
+
+
+      </ul>
+
+      <!-- Social Icons -->
+      <div class="flex gap-3">
+           <img src="assets/linkedn.svg">
+ <img src="assets/behance.svg">
+
+      </div>
+    </div>
+
+  </div>
+
+</section>
+
+</body>
+</html>
+
+
