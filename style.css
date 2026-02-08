@@ -64,3 +64,23 @@ body {
 
   .prev { left: 10px; }
 .next { right: 10px; }
+
+
+/* text slider aniamtion  */
+
+@keyframes slide {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+
+.ticker-track {
+  
+  animation: slide 20s linear infinite;
+}
+.ticker-item {
+  display: block;           /* 🔑 THIS MATTERS */
+  padding: 0 24px;          /* horizontal only */
+
+}
+
+/* text slider aniamtion complete  */

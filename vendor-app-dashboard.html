@@ -230,9 +230,10 @@ Global Garner Vendor Dashboard is a mobile application designed to help vendors 
 
   <!-- IMAGE IMAGE IMAGE IMAGE -->
 
-        <div class="image-wrap mt-24">
-        <img src="assets/Desktop - 5 (2).png" alt="App Screens" />
+       <div class="image-wrap mt-24">
+        <img src="assets/vendor-main-img.png" alt="App Screens" />
       </div>
+
 
   <!-- UX Challenges UX Challenges UX Challenges UX Challenges UX Challenges -->
 
@@ -305,137 +306,4 @@ Global Garner Vendor Dashboard is a mobile application designed to help vendors 
 
 
 
-  <!-- Slider Slider Slider Slider Slider Slider -->
-
-
   
-
-<!-- SLIDER SECTION -->
-
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <script src="https://cdn.tailwindcss.com"></script>
-
-  <style>
-    /* hide scrollbar */
-    #slider::-webkit-scrollbar {
-      display: none;
-    }
-    #slider {
-      -ms-overflow-style: none;
-      scrollbar-width: none;
-    }
-  </style>
-</head>
-
-<body>
-
-<section class="max-w-7xl mx-auto px-4 py-16">
-  <div class="relative">
-
-    <div class="overflow-hidden">
-      <!-- SLIDER -->
-      <div
-        id="slider"
-        class="flex gap-6 overflow-x-auto scroll-smooth no-scrollbar"
-      >
-
-        <!-- SLIDE -->
-        <div class="shrink-0 min-w-full md:min-w-[50%] lg:min-w-[33.333%]">
-          <div class="bg-[#f4f0ff] rounded-3xl p-8 text-center">
-            <h4 class="text-xs tracking-widest font-semibold mb-4">
-              INTELLIGENT SCHEDULING
-            </h4>
-            <p class="text-gray-600 text-sm mb-8">
-              AI algorithms analyze preferences and availability.
-            </p>
-            <img src="assets/vendor-bill_review-details.png" class="mx-auto max-h-[420px]" />
-          </div>
-        </div>
-
-        <div class="shrink-0 min-w-full md:min-w-[50%] lg:min-w-[33.333%]">
-          <div class="bg-[#f3f8ff] rounded-3xl p-8 text-center">
-            <h4 class="text-xs tracking-widest font-semibold mb-4">
-              ADVANCED INSIGHTS
-            </h4>
-            <p class="text-gray-600 text-sm mb-8">
-              Analytics-driven scheduling decisions.
-            </p>
-            <img src="https://dummyimage.com/300x600/000/fff" class="mx-auto max-h-[420px]" />
-          </div>
-        </div>
-
-        <div class="shrink-0 min-w-full md:min-w-[50%] lg:min-w-[33.333%]">
-          <div class="bg-[#f3f8ff] rounded-3xl p-8 text-center">
-            <h4 class="text-xs tracking-widest font-semibold mb-4">
-              PERSONALIZATION
-            </h4>
-            <p class="text-gray-600 text-sm mb-8">
-              Fully customizable schedules.
-            </p>
-            <img src="https://dummyimage.com/300x600/000/fff" class="mx-auto max-h-[420px]" />
-          </div>
-        </div>
-
-
-        
-
-      </div>
-    </div>
-
-    <!-- ARROWS -->
-    <button
-      id="prevBtn"
-      class="absolute -left-4 top-1/2 -translate-y-1/2 bg-white shadow rounded-full w-10 h-10 flex items-center justify-center text-xl"
-    >
-      ‹
-    </button>
-
-    <button
-      id="nextBtn"
-      class="absolute -right-4 top-1/2 -translate-y-1/2 bg-white shadow rounded-full w-10 h-10 flex items-center justify-center text-xl"
-    >
-      ›
-    </button>
-
-  </div>
-</section>
-
-
-
-
-<script>
-document.addEventListener("DOMContentLoaded", () => {
-  const slider = document.getElementById("slider");
-  const nextBtn = document.getElementById("nextBtn");
-  const prevBtn = document.getElementById("prevBtn");
-
-  const slide = slider.children[0]; // first slide
-  const gap = 24; // gap-6 = 24px
-  const slideWidth = slide.offsetWidth + gap;
-
-  nextBtn.addEventListener("click", () => {
-    slider.scrollBy({ left: slideWidth, behavior: "smooth" });
-  });
-
-  prevBtn.addEventListener("click", () => {
-    slider.scrollBy({ left: -slideWidth, behavior: "smooth" });
-  });
-});
-</script>
-
-
-</body>
-</html>
-
-
-
-
-
-
-
-
