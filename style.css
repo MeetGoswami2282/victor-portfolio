@@ -84,3 +84,22 @@ body {
 }
 
 /* text slider aniamtion complete  */
+
+
+
+
+/* movable movable  */
+
+    .grid-bg {
+      background-image:
+        linear-gradient(to right, #00000008 1px, transparent 1px),
+        linear-gradient(to bottom, #00000008 1px, transparent 1px);
+      background-size: 48px 48px;
+    }
+
+    .draggable {
+      cursor: grab;
+    }
+    .draggable:active {
+      cursor: grabbing;
+    }

@@ -478,21 +478,6 @@
 <!-- TOOLS & TECHNOLOGY  TOOLS & TECHNOLOGY TOOLS & TECHNOLOGY  -->
 
 
-  <div class="text-center mb-16">
-      <div class="flex justify-center gap-2 mb-4 text-3xl">
-        🤩 😍
-      </div>
-
-      <h2 class="text-4xl md:text-5xl font-bold text-black leading-tight">
-        <span class="relative inline-block">
-         Your needs, my Expertise
-          <span class="absolute left-0 -bottom-1 w-full h-1 bg-orange-500"></span>
-        </span>
-        <br />
-      —let’s make it happen.
-
-      </h2>
-    </div>
 
 <div class="w-full overflow-hidden bg-gray-100 h-[90px] flex items-center">
 
@@ -531,26 +516,6 @@
 
 
 <!-- MOVALE MOVALE MOVALE -->
-
-  <style>
-    /* grid background */
-    .grid-bg {
-      background-image:
-        linear-gradient(to right, #00000008 1px, transparent 1px),
-        linear-gradient(to bottom, #00000008 1px, transparent 1px);
-      background-size: 48px 48px;
-    }
-
-    .draggable {
-      cursor: grab;
-    }
-    .draggable:active {
-      cursor: grabbing;
-    }
-  </style>
-</head>
-
-
 
 <section
   class="relative max-w-[1330px] mx-auto min-h-screen overflow-hidden flex items-center justify-center grid-bg bg-[#ffffff]  border  grid-bg  mt-32">
@@ -610,68 +575,7 @@
 
 </section>
 
-<script>
-  let active = null;
-  let offsetX = 0;
-  let offsetY = 0;
-
-  document.querySelectorAll('.draggable').forEach(el => {
-    el.addEventListener('mousedown', startDrag);
-    el.addEventListener('touchstart', startDrag, { passive: false });
-  });
-
-  function startDrag(e) {
-    e.preventDefault();
-    active = this;
-
-    const rect = active.getBoundingClientRect();
-    const clientX = e.touches ? e.touches[0].clientX : e.clientX;
-    const clientY = e.touches ? e.touches[0].clientY : e.clientY;
-
-    offsetX = clientX - rect.left;
-    offsetY = clientY - rect.top;
-
-    active.style.zIndex = 50;
-  }
-
-  document.addEventListener('mousemove', drag);
-  document.addEventListener('touchmove', drag, { passive: false });
-
-  function drag(e) {
-    if (!active) return;
-
-    const clientX = e.touches ? e.touches[0].clientX : e.clientX;
-    const clientY = e.touches ? e.touches[0].clientY : e.clientY;
-
-    active.style.left = `${clientX - offsetX}px`;
-    active.style.top = `${clientY - offsetY}px`;
-    active.style.right = 'auto';
-    active.style.bottom = 'auto';
-  }
-
-  document.addEventListener('mouseup', endDrag);
-  document.addEventListener('touchend', endDrag);
-
-  function endDrag() {
-    if (!active) return;
-    active.style.zIndex = '';
-    active = null;
-  }
-</script>
-
-
 <!-- complete Movale -->
-
-
-
-</body>
-</html>
-
-
-
-
-
-
 
 
 <!-- FOOTER FOOTER FOOTER FOOTER FOOTER -->
