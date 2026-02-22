@@ -15,11 +15,16 @@
 <body>
     <!-- NAVBAR NAVBAR NAVBAR NAVBAR -->
 
-<!-- OUTER FRAME -->
+<nav class="w-full max-w-[1330px] m-auto rounded-lg sticky top-0 z-50 bg-transparent flex justify-center p-4 " >
+  
+<div class="relative bg-white rounded-2xl shadow px-6 py-5 max-w-5xl w-full mt-6  border-solid
+  border-t border-l border-r
+  border-b-2
+  border-[#C9C9C9]
+  bg-gradient-to-b from-[#FAFAFA] to-[#F0F0F0]
+  rounded-[20px]
+  shadow-[inset_0px_-5px_0.5px_0px_rgba(188,188,188,0.3)]">
 
-<nav class="w-full sticky top-0 z-50 bg-transparent flex justify-center p-4" >
-  <!-- <div class="bg-white border shadow px-6 py-4 max-w-5xl w-full mt-6"> -->
-<div class="relative bg-white border shadow px-6 py-4 max-w-5xl w-full mt-6">
     <div class="flex items-center justify-between">
 
       <!-- Logo -->
@@ -27,17 +32,18 @@
         <div class="w-9 h-9 rounded-full bg-orange-500 flex items-center justify-center text-white font-bold">
           ★
         </div>
-        <span id="logoText" class="font-semibold">Meet</span>
+        <span id="" class="font-semibold">Meet</span>
       </div>
 
       <!-- Desktop Menu -->
       <ul class="hidden md:flex gap-8 font-medium">
-        <li>About</li>
-        <li>Works</li>
+        <li> <a href="#about-me">About</a></li>
+        <li> <a href="#works">Works</a></li>
         <li class="hover:text-gray-600 cursor-pointer">
           <a href="assets/Meet_Goswami_Resume.pdf">Download CV</a>
         </li>
       </ul>
+     
 
       <!-- Mobile Toggle -->
       <button id="toggleBtn" class="md:hidden text-2xl font-bold">
@@ -50,8 +56,8 @@
 <div id="mobileMenu"
      class="hidden absolute top-full left-0 w-full bg-white border-t shadow-md md:hidden">
   <ul class="flex flex-col gap-6 text-sm p-6">
-    <li>About</li>
-        <li>Works</li>
+ <li> <a href="#about-me">About</a></li>
+        <li> <a href="#works">Works</a></li>
         <li class="hover:text-gray-600 cursor-pointer">
           <a href="assets/Meet_Goswami_Resume.pdf">Download CV</a>
         </li>
@@ -61,51 +67,25 @@
   </div>
 </nav>
 
-<script>
-document.addEventListener("DOMContentLoaded", function () {
-
-  const toggleBtn = document.getElementById("toggleBtn");
-  const mobileMenu = document.getElementById("mobileMenu");
-  const logoText = document.getElementById("logoText");
-
-  toggleBtn.addEventListener("click", function () {
-
-    mobileMenu.classList.toggle("hidden");
-
-    if (mobileMenu.classList.contains("hidden")) {
-      toggleBtn.textContent = "☰";
-      logoText.textContent = "Meet";
-    } else {
-      toggleBtn.textContent = "✕";
-      logoText.textContent = "Meet *";
-    }
-
-  });
-
-});
-</script>
-<div class="min-h-screen p-4">
-  <div class="min-h-[65vh] max-w-[1330px] mx-auto bg-[#f7f7f7] rounded-[32px] border shadow-sm grid-bg">
-
-  
-
-
 
 <!-- HERO SECTION HERO SECTION HERO SECTION HERO SECTION HERO SECTION  -->
+
+<div class="min-h-screen p-4">
+  <div class="min-h-[65vh] max-w-[1330px] mx-auto bg-[#f7f7f7] rounded-[32px] border shadow-sm grid-bg">
 <section id="heroSection" class="hero-container max-w-[1330px] mx-auto flex flex-col items-center justify-center text-center px-6 py-24">
 
-  <p class="text-sm text-gray-600 mb-4 relative z-20">
-    Heya! I'm Meet👋
+  <p class="text-md text-gray-600 mb-4 relative z-20">
+    Hey! I'm Meet👋
   </p>
 
-  <h1 class="text-4xl md:text-6xl font-extrabold leading-tight max-w-4xl relative z-20">
-    Product Designer <br class="hidden sm:block" />
-    + Developer based in <span class="relative inline-block">
-      LA
+  <h1 class="text-4xl md:text-6xl font-extrabold !leading-[1.3] max-w-4xl relative z-20">
+    UI/UX Designer Crafting <br class="hidden sm:block" />
+   Seamless Digital Experiences <span class="relative inline-block">
+      
       <span class="absolute -bottom-2 left-0 w-full h-1 bg-orange-400 rounded-full"></span>
     </span>
   </h1>
-
+<p class="mt-4 text-lg">I design clean, user-first interfaces that simplify complexity and improve usability.</p>
   <!-- Draggable Elements Container -->
   <div id="draggableContainer" class="absolute inset-0 pointer-events-none">
     <!-- Elements will be added here by JavaScript -->
@@ -131,9 +111,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
-<!-- ABOUT ME ABOUT ME ABOUT ME ABOUT ME -->
+<!-- ABOUT ME ABOUT ME ABOUT ME ABOUT ME ABOUT ME ABOUT ME ABOUT ME ABOUT ME -->
 
 
+<div id="about-me">
   <section class="max-w-5xl mx-auto px-6 py-20 text-center">
 
     <!-- Images -->
@@ -194,13 +175,14 @@ document.addEventListener("DOMContentLoaded", function () {
     </p>
 
   </section>
-
+</div>
 
 
   
 
 <!-- PORTFOLIO  PORTFOLIO PORTFOLIO PORTFOLIO PORTFOLIO PORTFOLIO  -->
 
+<div id="works">
   <section class="max-w-[1330px] mx-auto px-6 py-24">
 
     <!-- Heading -->
@@ -249,9 +231,23 @@ document.addEventListener("DOMContentLoaded", function () {
           <p class="text-[#5F5F5F] leading-[1.8] mb-8">
            A platform to help users connect, share knowledge, and collaborate on ideas with the help of AI-powered insights. Users can join conversations, brainstorm, and access curated content tailored to their professional and personal interests.
           </p>
-          <a href="vendor-app-dashboard.html"   class="inline-flex px-6 py-3 bg-orange-500 text-white rounded-xl shadow-lg">
+
+           <div class="mt-10 flex flex-col sm:flex-row gap-4 relative z-20">
+    <a href="vendor-app-dashboard.html"
+      class="inline-flex items-center gap-2
+            px-6 py-3
+            rounded-xl
+            bg-orange-500 text-white font-medium
+            shadow-[0_8px_30px_rgba(255,153,51,0.55)]
+            hover:shadow-[0_10px_40px_rgba(255,153,51,0.7)]
+            transition-all duration-300">
+  See Case Study
+    </a>
+  </div>
+          
+          <!-- <a href="vendor-app-dashboard.html"   class="inline-flex px-6 py-3 bg-orange-500 text-white rounded-xl shadow-lg">
             See Case Study
-          </a>
+          </a> -->
         </div>
       </div>
 
@@ -286,9 +282,16 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
           </p>
-          <a   href="upos_landing_page.html" class="inline-flex px-6 py-3 bg-orange-500 text-white rounded-xl shadow-lg">
-            See Case Study
-          </a>
+          <a href="upos_landing_page.html"
+      class="inline-flex items-center gap-2
+            px-6 py-3
+            rounded-xl
+            bg-orange-500 text-white font-medium
+            shadow-[0_8px_30px_rgba(255,153,51,0.55)]
+            hover:shadow-[0_10px_40px_rgba(255,153,51,0.7)]
+            transition-all duration-300">
+  See Case Study
+    </a>
         </div>
       </div>
 
@@ -325,9 +328,16 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
           </p>
-          <a href="krishivatech_landing_page.html"  class="inline-flex px-6 py-3 bg-orange-500 text-white rounded-xl shadow-lg">
-            See Case Study
-          </a>
+            <a href="krishivatech_landing_page.html"
+      class="inline-flex items-center gap-2
+            px-6 py-3
+            rounded-xl
+            bg-orange-500 text-white font-medium
+            shadow-[0_8px_30px_rgba(255,153,51,0.55)]
+            hover:shadow-[0_10px_40px_rgba(255,153,51,0.7)]
+            transition-all duration-300">
+  See Case Study
+    </a>
         </div>
       </div>
 
@@ -364,9 +374,16 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
           </p>
-          <a  href="niralifoodapp.html" class="inline-flex px-6 py-3 bg-orange-500 text-white rounded-xl shadow-lg">
-            See Case Study
-          </a>
+                <a href="niralifoodapp.html"
+      class="inline-flex items-center gap-2
+            px-6 py-3
+            rounded-xl
+            bg-orange-500 text-white font-medium
+            shadow-[0_8px_30px_rgba(255,153,51,0.55)]
+            hover:shadow-[0_10px_40px_rgba(255,153,51,0.7)]
+            transition-all duration-300">
+  See Case Study
+    </a>
         </div>
       </div>
 
@@ -403,9 +420,16 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
           </p>
-          <a href="vendor_web_dashboard.html" class="inline-flex px-6 py-3 bg-orange-500 text-white rounded-xl shadow-lg">
-            See Case Study
-          </a>
+            <a href="vendor_web_dashboard.html"
+      class="inline-flex items-center gap-2
+            px-6 py-3
+            rounded-xl
+            bg-orange-500 text-white font-medium
+            shadow-[0_8px_30px_rgba(255,153,51,0.55)]
+            hover:shadow-[0_10px_40px_rgba(255,153,51,0.7)]
+            transition-all duration-300">
+  See Case Study
+    </a>
         </div>
       </div>
 
@@ -440,9 +464,16 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
           </p>
-          <a href="upos_dashboard.html"  class="inline-flex px-6 py-3 bg-orange-500 text-white rounded-xl shadow-lg">
-            See Case Study
-          </a>
+           <a href="upos_dashboard.html"
+      class="inline-flex items-center gap-2
+            px-6 py-3
+            rounded-xl
+            bg-orange-500 text-white font-medium
+            shadow-[0_8px_30px_rgba(255,153,51,0.55)]
+            hover:shadow-[0_10px_40px_rgba(255,153,51,0.7)]
+            transition-all duration-300">
+  See Case Study
+    </a>
         </div>
       </div>
 
@@ -478,9 +509,16 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
           </p>
-          <a class="inline-flex px-6 py-3 bg-orange-500 text-white rounded-xl shadow-lg">
-            See Case Study
-          </a>
+             <a href=""
+      class="inline-flex items-center gap-2
+            px-6 py-3
+            rounded-xl
+            bg-orange-500 text-white font-medium
+            shadow-[0_8px_30px_rgba(255,153,51,0.55)]
+            hover:shadow-[0_10px_40px_rgba(255,153,51,0.7)]
+            transition-all duration-300">
+  See Case Study
+    </a>
         </div>
       </div>
 
@@ -499,7 +537,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 </section>
   </section>
-
+</div>
 
 <!-- TOOLS & TECHNOLOGY  TOOLS & TECHNOLOGY TOOLS & TECHNOLOGY  -->
 
@@ -544,7 +582,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
 <section class="max-w-[1330px] mx-auto mb-12 mt-20 px-[10px] md:px-[10px] ">
 
-  <!-- Outer Card -->
   <div class="max-w-[1330px] bg-[#f7f7f7] rounded-[22px] border grid-bg relative overflow-hidden">
 
     <!-- Main Content -->
@@ -554,7 +591,6 @@ document.addEventListener("DOMContentLoaded", function () {
              py-14 sm:py-20 md:py-28"
     >
 
-      <!-- EMAIL (FIXED) -->
 <h1
   class="font-extrabold tracking-tight text-center
          text-lg sm:text-xl md:text-2xl lg:text-5xl
@@ -575,23 +611,19 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
       <!-- CTA BUTTON -->
-     <button
-  class="mt-8
-         flex flex-col sm:flex-row items-center gap-2
-         rounded-lg
-         bg-orange-500
-         px-4 py-2 sm:px-5 sm:py-2.5
-         text-sm sm:text-base
-         text-white font-medium
-         shadow-[0_10px_30px_rgba(255,153,51,0.6)]
-         hover:shadow-[0_12px_40px_rgba(255,153,51,0.75)]
-         transition-all duration-300"
->
-  <span>View Works</span>
-</button>
 
-     
-      </button>
+  <div class="mt-10 flex flex-col sm:flex-row gap-4 relative z-20">
+    <a href="#"
+      class="inline-flex items-center gap-2
+            px-6 py-3
+            rounded-xl
+            bg-orange-500 text-white font-medium
+            shadow-[0_8px_30px_rgba(255,153,51,0.55)]
+            hover:shadow-[0_10px_40px_rgba(255,153,51,0.7)]
+            transition-all duration-300">
+  View Works
+    </a>
+  </div>
 
     </div>
 
@@ -604,25 +636,28 @@ document.addEventListener("DOMContentLoaded", function () {
 
       <!-- Left Nav -->
       <ul class="flex text-base flex-wrap justify-center  sm:justify-start gap-6 font-medium text-sm">
-        <li class="hover:text-gray-600 cursor-pointer">About</li>
-        <li class="hover:text-gray-600 cursor-pointer">Works</li>
+       <li> <a href="#about-me">About</a></li>
+        <li> <a href="#works">Works</a></li>
         <li class="hover:text-gray-600 cursor-pointer">
-          <a href="assets/Meet_Goswami_Resume.pdf" download>Download CV</a>
+          <a href="assets/Meet_Goswami_Resume.pdf">Download CV</a>
         </li>
       </ul>
 
       <!-- Social Icons -->
 <div class="flex gap-3 sm:gap-4">
+<a href="https://www.linkedin.com/in/meet-goswami-b54562143">
 <img
   src="assets/linkedn.svg"
   alt="Behance"
   class="w-10 h-10 sm:w-20 sm:h-20 md:w-12 md:h-12 lg:w-16 lg:h-16"
 />
- <img
+
+</a>
+ <a href="https://www.behance.net/meetgoswami4"><img
   src="assets/behance.svg"
   alt="Behance"
   class="w-10 h-10 sm:w-20 sm:h-20 md:w-12 md:h-12 lg:w-16 lg:h-16"
-/>
+/></a>
 </div>
 
 
