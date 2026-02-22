@@ -16,15 +16,10 @@
     <!-- NAVBAR NAVBAR NAVBAR NAVBAR -->
 
 <!-- OUTER FRAME -->
-<div class="min-h-screen p-4">
-  <div class="min-h-[65vh] max-w-[1330px] mx-auto bg-[#f7f7f7] rounded-[32px] border shadow-sm grid-bg">
 
-    <!-- NAVBAR -->
-   <!-- NAVBAR -->
-<nav class="w-full sticky top-0 z-50 bg-transparent flex justify-center">
-  <div class="bg-white border shadow px-6 py-4 max-w-5xl w-full mt-6">
-
-    <!-- Top bar -->
+<nav class="w-full sticky top-0 z-50 bg-transparent flex justify-center p-4" >
+  <!-- <div class="bg-white border shadow px-6 py-4 max-w-5xl w-full mt-6"> -->
+<div class="relative bg-white border shadow px-6 py-4 max-w-5xl w-full mt-6">
     <div class="flex items-center justify-between">
 
       <!-- Logo -->
@@ -32,38 +27,69 @@
         <div class="w-9 h-9 rounded-full bg-orange-500 flex items-center justify-center text-white font-bold">
           ★
         </div>
-        <span class="font-semibold">Meet</span>
+        <span id="logoText" class="font-semibold">Meet</span>
       </div>
 
       <!-- Desktop Menu -->
-      <ul class="hidden md:flex gap-8  font-medium">
+      <ul class="hidden md:flex gap-8 font-medium">
         <li>About</li>
         <li>Works</li>
-        <a href="assets/Meet_Goswami_Resume.pdf"><li class="hover:text-gray-600 cursor-pointer">Download CV</li></a> 
-
+        <li class="hover:text-gray-600 cursor-pointer">
+          <a href="assets/Meet_Goswami_Resume.pdf">Download CV</a>
+        </li>
       </ul>
 
       <!-- Mobile Toggle -->
       <button id="toggleBtn" class="md:hidden text-2xl font-bold">
-        <span id="iconOpen">☰</span>
-        <span id="iconClose" class="hidden">✕</span>
+        ☰
       </button>
 
     </div>
 
     <!-- Mobile Menu -->
-    <div id="mobileMenu" class="hidden mt-4 border-t pt-4 md:hidden">
-      <ul class="flex flex-col gap-4 text-sm">
-        <li>About</li>
-        <li>Works</li>
-        <li>Services</li>
-        <li>Playground</li>
-        <li>Testimonials</li>
-      </ul>
-    </div>
+<div id="mobileMenu"
+     class="hidden absolute top-full left-0 w-full bg-white border-t shadow-md md:hidden">
+  <ul class="flex flex-col gap-6 text-sm p-6">
+    <li>About</li>
+    <li>Works</li>
+    <li>Services</li>
+    <li>Playground</li>
+    <li>Testimonials</li>
+  </ul>
+</div>
 
   </div>
 </nav>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  const toggleBtn = document.getElementById("toggleBtn");
+  const mobileMenu = document.getElementById("mobileMenu");
+  const logoText = document.getElementById("logoText");
+
+  toggleBtn.addEventListener("click", function () {
+
+    mobileMenu.classList.toggle("hidden");
+
+    if (mobileMenu.classList.contains("hidden")) {
+      toggleBtn.textContent = "☰";
+      logoText.textContent = "Meet";
+    } else {
+      toggleBtn.textContent = "✕";
+      logoText.textContent = "Meet *";
+    }
+
+  });
+
+});
+</script>
+<div class="min-h-screen p-4">
+  <div class="min-h-[65vh] max-w-[1330px] mx-auto bg-[#f7f7f7] rounded-[32px] border shadow-sm grid-bg">
+
+    <!-- NAVBAR -->
+   <!-- NAVBAR -->
+
 
 
 <!-- HERO SECTION HERO SECTION HERO SECTION HERO SECTION HERO SECTION  -->
@@ -414,7 +440,7 @@
 
 
           </p>
-          <a class="inline-flex px-6 py-3 bg-orange-500 text-white rounded-xl shadow-lg">
+          <a href="upos_dashboard.html"  class="inline-flex px-6 py-3 bg-orange-500 text-white rounded-xl shadow-lg">
             See Case Study
           </a>
         </div>
@@ -514,96 +540,97 @@
 </div>
 
 
-
-<!-- MOVALE MOVALE MOVALE -->
-
-<section
-  class="relative max-w-[1330px] mx-auto min-h-screen overflow-hidden flex items-center justify-center grid-bg bg-[#ffffff]  border  grid-bg  mt-32">
-
-  <!-- CENTER CONTENT -->
-  <div class="relative z-10 text-center max-w-xl px-6 pointer-events-none">
-    <div class="inline-flex items-center gap-2 bg-white shadow rounded-xl px-3 py-1 mb-6">
-      <span>🎨</span>
-      <span>🔥</span>
-    </div>
-
-    <p class="text-lg md:text-xl font-medium text-gray-900 leading-relaxed">
-      Turning bold ideas into unforgettable<br />
-      digital experiences that captivate users,<br />
-      elevate brands, and attract investors.<br />
-      <span class="font-semibold">Let’s create magic together!</span>
-    </p>
-  </div>
-
-  <!-- DRAGGABLE IMAGES -->
-
-  <img
-    src="assets/Brand-Promoter.png"
-    class="draggable absolute top-6 left-6 w-[320px] md:w-[420px] rotate-[-6deg] rounded-2xl shadow-xl"
-    alt=""
-  />
-
-  <img
-    src="assets/Brand-Promoter.png"
-    class="draggable absolute top-6 right-6 w-[320px] md:w-[420px] rotate-[6deg] rounded-2xl shadow-xl"
-    alt=""
-  />
-
-  <img
-    src="assets/Brand-Promoter.png"
-    class="draggable absolute top-1/2 -translate-y-1/2 right-2 w-[240px] md:w-[280px] rotate-[8deg] rounded-2xl shadow-xl"
-    alt=""
-  />
-
-  <img
-    src="https://via.placeholder.com/420x260"
-    class="draggable absolute bottom-6 right-20 w-[320px] md:w-[420px] rotate-[-4deg] rounded-2xl shadow-xl"
-    alt=""
-  />
-
-  <img
-    src="assets/Brand-Promoter.png"
-    class="draggable absolute bottom-6 left-20 w-[320px] md:w-[420px] rotate-[4deg] rounded-2xl shadow-xl"
-    alt=""
-  />
-
-  <img
-    src="assets/Brand-Promoter.png"
-    class="draggable absolute top-1/2 -translate-y-1/2 left-2 w-[240px] md:w-[280px] rotate-[-8deg] rounded-2xl shadow-xl"
-    alt=""
-  />
-
-</section>
-
-<!-- complete Movale -->
-
-
 <!-- FOOTER FOOTER FOOTER FOOTER FOOTER -->
 
-<!-- Bottom Bar -->
-<div class="relative z-10 w-full px-4 sm:px-6 py-4">
+<section class="max-w-[1330px] mx-auto mb-12 mt-20 px-[10px] md:px-[10px] ">
 
-  <!-- TEXT (ALWAYS TOP ON MOBILE + TABLET) -->
-  <ul
-    class="flex justify-center gap-6
-           text-sm sm:text-base font-medium
-           whitespace-nowrap
-           mb-4
-           lg:mb-0
-           lg:justify-start"
-  >
-    <li>About</li>
-    <li>Works</li>
-    <li>Download CV</li>
-  </ul>
+  <!-- Outer Card -->
+  <div class="max-w-[1330px] bg-[#f7f7f7] rounded-[22px] border grid-bg relative overflow-hidden">
 
-  <!-- ICONS (FORCED BOTTOM ON MOBILE + TABLET) -->
-  <div class="flex justify-center gap-4 lg:justify-end">
-    <img src="assets/linkedn.svg" class="w-10 h-10" />
-    <img src="assets/behance.svg" class="w-10 h-10" />
+    <!-- Main Content -->
+    <div
+      class="relative z-10 flex flex-col items-center justify-center text-center
+             px-5 sm:px-8 md:px-12
+             py-14 sm:py-20 md:py-28"
+    >
+
+      <!-- EMAIL (FIXED) -->
+<h1
+  class="font-extrabold tracking-tight text-center
+         text-lg sm:text-xl md:text-2xl lg:text-5xl
+         leading-tight
+         break-words">
+  meetgoswami842@gmail.com
+</h1>
+
+
+
+<p class="mt-4 max-w-2xl text-center
+          text-sm sm:text-base md:text-lg
+          text-gray-600
+          leading-relaxed">
+  Let’s connect and build something great.
+</p>
+
+
+
+      <!-- CTA BUTTON -->
+     <button
+  class="mt-8
+         flex flex-col sm:flex-row items-center gap-2
+         rounded-lg
+         bg-orange-500
+         px-4 py-2 sm:px-5 sm:py-2.5
+         text-sm sm:text-base
+         text-white font-medium
+         shadow-[0_10px_30px_rgba(255,153,51,0.6)]
+         hover:shadow-[0_12px_40px_rgba(255,153,51,0.75)]
+         transition-all duration-300"
+>
+  <span>View Works</span>
+</button>
+
+     
+      </button>
+
+    </div>
+
+    <!-- Bottom Bar -->
+    <div
+      class="relative z-10 flex flex-col sm:flex-row
+             items-center justify-between gap-6
+             px-5 sm:px-8 py-5"
+    >
+
+      <!-- Left Nav -->
+      <ul class="flex text-base flex-wrap justify-center  sm:justify-start gap-6 font-medium text-sm">
+        <li class="hover:text-gray-600 cursor-pointer">About</li>
+        <li class="hover:text-gray-600 cursor-pointer">Works</li>
+        <li class="hover:text-gray-600 cursor-pointer">
+          <a href="assets/Meet_Goswami_Resume.pdf" download>Download CV</a>
+        </li>
+      </ul>
+
+      <!-- Social Icons -->
+<div class="flex gap-3 sm:gap-4">
+<img
+  src="assets/linkedn.svg"
+  alt="Behance"
+  class="w-10 h-10 sm:w-20 sm:h-20 md:w-12 md:h-12 lg:w-16 lg:h-16"
+/>
+ <img
+  src="assets/behance.svg"
+  alt="Behance"
+  class="w-10 h-10 sm:w-20 sm:h-20 md:w-12 md:h-12 lg:w-16 lg:h-16"
+/>
+</div>
+
+
+    </div>
+
   </div>
 
-</div>
+</section>
 
 
 
