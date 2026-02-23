@@ -32,7 +32,7 @@
         <div class="w-9 h-9 rounded-full bg-orange-500 flex items-center justify-center text-white font-bold">
           ★
         </div>
-        <span id="" class="font-semibold">Meet</span>
+        <span id="" class="font-bold">Meet</span>
       </div>
 
       <!-- Desktop Menu -->
@@ -54,7 +54,7 @@
 
     <!-- Mobile Menu -->
 <div id="mobileMenu"
-     class="hidden absolute top-full left-0 w-full bg-white border-t shadow-md md:hidden">
+     class="hidden absolute top-full left-0 w-full bg-white border-t rounded-xl shadow-md md:hidden">
   <ul class="flex flex-col gap-6 text-sm p-6">
  <li> <a href="#about-me">About</a></li>
         <li> <a href="#works">Works</a></li>
@@ -93,7 +93,7 @@
 
   <!-- Buttons -->
   <div class="mt-10 flex flex-col sm:flex-row gap-4 relative z-20">
-    <a href="#"
+    <a href="#works"
       class="inline-flex items-center gap-2
             px-6 py-3
             rounded-xl
@@ -545,38 +545,58 @@
 
 <div class="w-full overflow-hidden bg-gray-100 h-[90px] flex items-center">
 
- <div class="ticker-track flex w-[200%]">
-  
-  <!-- SET 1 -->
-  <div class="flex items-center">
-    <span class="ticker-item whitespace-nowrap text-[26px] leading-none font-medium px-[24px]">UI Design</span>
-    <span class="ticker-item whitespace-nowrap text-[26px] leading-none font-medium px-[24px]">✦</span>
-    <span class="ticker-item whitespace-nowrap text-[26px] leading-none font-medium px-[24px]">UX Design</span>
-    <span class="ticker-item whitespace-nowrap text-[26px] leading-none font-medium px-[24px]">✦</span>
-    <span class="ticker-item whitespace-nowrap text-[26px] leading-none font-medium px-[24px]">UX Research</span>
-    <span class="ticker-item whitespace-nowrap text-[26px] leading-none font-medium px-[24px]">✦</span>
- 
-    <span class="ticker-item whitespace-nowrap text-[26px] leading-none font-medium px-[24px]">Wireframing</span>
-    <span class="ticker-item whitespace-nowrap text-[26px] leading-none font-medium px-[24px]">✦</span>
-    <span class="ticker-item whitespace-nowrap text-[26px] leading-none font-medium px-[24px]">Prototyping</span>
-    <span class="ticker-item whitespace-nowrap text-[26px] leading-none font-medium px-[24px]">✦</span>
-    <span class="ticker-item whitespace-nowrap text-[26px] leading-none font-medium px-[24px]">Responsive Design</span>
-    <span class="ticker-item whitespace-nowrap text-[26px] leading-none font-medium px-[24px]">✦</span>
-    <span class="ticker-item whitespace-nowrap text-[26px] leading-none font-medium px-[24px]">HTML</span>
-    <span class="ticker-item whitespace-nowrap text-[26px] leading-none font-medium px-[24px]">✦</span>
-    <span class="ticker-item whitespace-nowrap text-[26px] leading-none font-medium px-[24px]">CSS</span>
-    <span class="ticker-item whitespace-nowrap text-[26px] leading-none font-medium px-[24px]">✦</span>
-    <span class="ticker-item whitespace-nowrap text-[26px] leading-none font-medium px-[24px]">Figma</span>
-    <span class="ticker-item whitespace-nowrap text-[26px] leading-none font-medium px-[24px]">✦</span>
-    <span class="ticker-item whitespace-nowrap text-[26px] leading-none font-medium px-[24px]">Adobe XD</span>
-    <span class="ticker-item whitespace-nowrap text-[26px] leading-none font-medium px-[24px]">✦</span>
+  <div class="ticker-track flex whitespace-nowrap">
+
+    <!-- SET 1 -->
+    <div class="flex items-center">
+      <span class="px-6 text-[26px] font-medium">UI Design</span>
+      <span class="px-6 text-[26px] font-medium">✦</span>
+      <span class="px-6 text-[26px] font-medium">UX Design</span>
+      <span class="px-6 text-[26px] font-medium">✦</span>
+      <span class="px-6 text-[26px] font-medium">UX Research</span>
+      <span class="px-6 text-[26px] font-medium">✦</span>
+      <span class="px-6 text-[26px] font-medium">Wireframing</span>
+      <span class="px-6 text-[26px] font-medium">✦</span>
+      <span class="px-6 text-[26px] font-medium">Prototyping</span>
+      <span class="px-6 text-[26px] font-medium">✦</span>
+      <span class="px-6 text-[26px] font-medium">Responsive Design</span>
+      <span class="px-6 text-[26px] font-medium">✦</span>
+      <span class="px-6 text-[26px] font-medium">HTML</span>
+      <span class="px-6 text-[26px] font-medium">✦</span>
+      <span class="px-6 text-[26px] font-medium">CSS</span>
+      <span class="px-6 text-[26px] font-medium">✦</span>
+      <span class="px-6 text-[26px] font-medium">Figma</span>
+      <span class="px-6 text-[26px] font-medium">✦</span>
+      <span class="px-6 text-[26px] font-medium">Adobe XD</span>
+      <span class="px-6 text-[26px] font-medium">✦</span>
+    </div>
+
+    <!-- SET 2 (Duplicate for seamless loop) -->
+    <div class="flex items-center">
+      <span class="px-6 text-[26px] font-medium">UI Design</span>
+      <span class="px-6 text-[26px] font-medium">✦</span>
+      <span class="px-6 text-[26px] font-medium">UX Design</span>
+      <span class="px-6 text-[26px] font-medium">✦</span>
+      <span class="px-6 text-[26px] font-medium">UX Research</span>
+      <span class="px-6 text-[26px] font-medium">✦</span>
+      <span class="px-6 text-[26px] font-medium">Wireframing</span>
+      <span class="px-6 text-[26px] font-medium">✦</span>
+      <span class="px-6 text-[26px] font-medium">Prototyping</span>
+      <span class="px-6 text-[26px] font-medium">✦</span>
+      <span class="px-6 text-[26px] font-medium">Responsive Design</span>
+      <span class="px-6 text-[26px] font-medium">✦</span>
+      <span class="px-6 text-[26px] font-medium">HTML</span>
+      <span class="px-6 text-[26px] font-medium">✦</span>
+      <span class="px-6 text-[26px] font-medium">CSS</span>
+      <span class="px-6 text-[26px] font-medium">✦</span>
+      <span class="px-6 text-[26px] font-medium">Figma</span>
+      <span class="px-6 text-[26px] font-medium">✦</span>
+      <span class="px-6 text-[26px] font-medium">Adobe XD</span>
+      <span class="px-6 text-[26px] font-medium">✦</span>
+    </div>
+
   </div>
-
 </div>
-
-
-</div>
-
 
 <!-- FOOTER FOOTER FOOTER FOOTER FOOTER -->
 
@@ -596,7 +616,7 @@
          text-lg sm:text-xl md:text-2xl lg:text-5xl
          leading-tight
          break-words">
-  meetgoswami842@gmail.com
+ Let's Build Something Great Together!
 </h1>
 
 
@@ -605,7 +625,7 @@
           text-sm sm:text-base md:text-lg
           text-gray-600
           leading-relaxed">
-  Let’s connect and build something great.
+Ready to create designs that your users will love and your business will benefit from? Contact me today.
 </p>
 
 
@@ -613,16 +633,14 @@
       <!-- CTA BUTTON -->
 
   <div class="mt-10 flex flex-col sm:flex-row gap-4 relative z-20">
-    <a href="#"
-      class="inline-flex items-center gap-2
-            px-6 py-3
-            rounded-xl
-            bg-orange-500 text-white font-medium
-            shadow-[0_8px_30px_rgba(255,153,51,0.55)]
-            hover:shadow-[0_10px_40px_rgba(255,153,51,0.7)]
-            transition-all duration-300">
-  View Works
-    </a>
+   <button id="openModal"
+          class="px-6 py-3 rounded-xl
+                 bg-orange-500 text-white font-medium
+                 shadow-[0_8px_30px_rgba(255,153,51,0.55)]
+                 hover:shadow-[0_10px_40px_rgba(255,153,51,0.7)]
+                 transition-all duration-300">
+          Start Your Project
+        </button>
   </div>
 
     </div>
@@ -639,7 +657,7 @@
        <li> <a href="#about-me">About</a></li>
         <li> <a href="#works">Works</a></li>
         <li class="hover:text-gray-600 cursor-pointer">
-          <a href="assets/Meet_Goswami_Resume.pdf">Download CV</a>
+          <a href="assets/Meet_Goswami_Resume.pdf" target="_blank" rel="noopener noreferrer">Download CV</a>
         </li>
       </ul>
 
@@ -664,6 +682,114 @@
     </div>
 
   </div>
+
+
+
+
+<div id="modal"
+     class="fixed inset-0 bg-black/50 backdrop-blur-sm hidden
+            flex items-center justify-center z-[999] p-4">
+
+  <div class="bg-white w-full max-w-6xl rounded-2xl shadow-2xl
+              relative overflow-y-auto max-h-[90vh]">
+
+    <!-- Close Button -->
+    <button id="closeModal"
+            class="absolute top-4 right-6 text-2xl font-bold">
+      ✕
+    </button>
+
+    <div class="p-10">
+
+      <div class="grid md:grid-cols-2 gap-12 items-center">
+
+        <!-- LEFT SIDE -->
+        <div>
+
+          <h1 class="text-5xl md:text-6xl font-semibold leading-[1.4]">
+            Experience Better <br> UX Design
+          </h1>
+
+          <p class="text-gray-600 mt-6 text-base max-w-md">
+            Website redesign? App design? UX project? I can help.
+            Book a free call to discuss your needs.
+          </p>
+
+          <form class="mt-10 space-y-6">
+
+            <div class="grid md:grid-cols-2 gap-6">
+              <div>
+                <label class="block mb-2 text-sm font-medium">Name</label>
+                <input type="text" placeholder="John Doe"
+                  class="w-full rounded-lg px-4 py-3 border border-[#d1d1d1] outline-none focus:ring-2 focus:ring-black/20">
+              </div>
+
+              <div>
+                <label class="block mb-2 text-sm font-medium">Email</label>
+                <input type="email" placeholder="johndoe@gmail.com"
+                  class="w-full rounded-lg px-4 py-3 border border-[#d1d1d1] outline-none focus:ring-2 focus:ring-black/20">
+              </div>
+            </div>
+
+            <div>
+              <label class="block mb-2 text-sm font-medium">Message</label>
+              <textarea rows="4" placeholder="Type a message..."
+                class="w-full rounded-lg px-4 py-3 border border-[#d1d1d1] outline-none focus:ring-2 focus:ring-black/20"></textarea>
+            </div>
+
+            <button
+              class="w-full px-6 py-3 rounded-xl
+                     bg-orange-500 text-white font-medium
+                     shadow-[0_8px_30px_rgba(255,153,51,0.55)]
+                     hover:shadow-[0_10px_40px_rgba(255,153,51,0.7)]
+                     transition-all duration-300">
+              Send Message
+            </button>
+
+          </form>
+
+        </div>
+
+        <!-- RIGHT SIDE -->
+        <div class="hidden md:block">
+          <img src="https://images.unsplash.com/photo-1581092334651-ddf26d9a09d0"
+               class="rounded-2xl w-full object-cover h-[550px]">
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+
+
+
+<!-- ================= SCRIPT ================= -->
+<script>
+  const openBtn = document.getElementById("openModal");
+  const modal = document.getElementById("modal");
+  const closeBtn = document.getElementById("closeModal");
+
+  openBtn.addEventListener("click", function() {
+    modal.classList.remove("hidden");
+    document.body.classList.add("overflow-hidden");
+  });
+
+  closeBtn.addEventListener("click", function() {
+    modal.classList.add("hidden");
+    document.body.classList.remove("overflow-hidden");
+  });
+
+  modal.addEventListener("click", function(e) {
+    if (e.target === modal) {
+      modal.classList.add("hidden");
+      document.body.classList.remove("overflow-hidden");
+    }
+  });
+</script>
+
 
 </section>
 
