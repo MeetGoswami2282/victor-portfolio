@@ -5,75 +5,105 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="style.css">
     <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://cdn.tailwindcss.com"></script>
+<script src="script.js" defer></script>
 
 
 
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
 </head>
-<script src="script.js"></script>
 
 <body>
     <!-- NAVBAR NAVBAR NAVBAR NAVBAR -->
 
-<!-- OUTER FRAME -->
-<div class="p-4">
-  <div class="min-h-[30vh] max-w-[1330px] mx-auto bg-[#f7f7f7] rounded-[32px] border shadow-sm grid-bg">
+<nav class="w-full max-w-[1330px] m-auto rounded-lg sticky top-0 z-50 bg-transparent flex justify-center p-4">
 
-    <!-- NAVBAR -->
-   <!-- NAVBAR -->
-<nav class="w-full sticky top-0 z-50 bg-transparent flex justify-center">
-  <div class="bg-white border shadow px-6 py-4 max-w-5xl w-full mt-4">
+  <div class="relative bg-white rounded-2xl shadow px-6 py-5 max-w-5xl w-full mt-6  border-solid
+  border-t border-l border-r
+  border-b-2
+  border-[#C9C9C9]
+  bg-gradient-to-b from-[#FAFAFA] to-[#F0F0F0]
+  rounded-[20px]
+  shadow-[inset_0px_-5px_0.5px_0px_rgba(188,188,188,0.3)]">
 
-    <!-- Top bar -->
     <div class="flex items-center justify-between">
 
       <!-- Logo -->
+       <a href="index.html">
+
+      
       <div class="flex items-center gap-3">
         <div class="w-9 h-9 rounded-full bg-orange-500 flex items-center justify-center text-white font-bold">
           ★
         </div>
-        <span class="font-semibold">Victor Hanford</span>
+        <span class="font-bold text-xl font-mono" >Meet</span>
       </div>
+ </a>
+      <!-- Desktop Right Section -->
+      <div class="hidden md:flex items-center gap-6">
 
-      <!-- Desktop Menu -->
-      <ul class="hidden md:flex gap-8  font-medium">
-        <li>About</li>
-        <li>Works</li>
-        <a href="assets/Meet_Goswami_Resume.pdf"><li class="hover:text-gray-600 cursor-pointer">Download CV</li></a> 
+        <a href="index.html"
+           class="font-medium text-gray-700 hover:text-black transition">
+          Back to home
+        </a>
 
-      </ul>
+        <div class="h-6 w-px bg-gray-300"></div>
+
+        <div class=" flex flex-col sm:flex-row gap-4 relative z-20">
+   <a href="works.html"><button id="openModals"
+          class="px-6 py-3 rounded-xl
+                 bg-orange-500 text-white font-medium
+                 shadow-[0_8px_30px_rgba(255,153,51,0.55)]
+                 hover:shadow-[0_10px_40px_rgba(255,153,51,0.7)]
+                 transition-all duration-300">
+           See all Works
+        </button></a>
+  </div>
+
+      </div>
 
       <!-- Mobile Toggle -->
       <button id="toggleBtn" class="md:hidden text-2xl font-bold">
-        <span id="iconOpen">☰</span>
-        <span id="iconClose" class="hidden">✕</span>
+        ☰
       </button>
 
     </div>
 
     <!-- Mobile Menu -->
-    <div id="mobileMenu" class="hidden mt-4 border-t pt-4 md:hidden">
-      <ul class="flex flex-col gap-4 text-sm">
-        <li>About</li>
-        <li>Works</li>
-        <li>Services</li>
-        <li>Playground</li>
-        <li>Testimonials</li>
-      </ul>
+    <div id="mobileMenu"
+         class="hidden absolute top-full left-0 w-full bg-white
+                border-t rounded-xl shadow-md md:hidden">
+    
+      <div class="flex flex-col gap-6 p-6">
+        <a href="index.html"
+           class="font-medium text-gray-700 text-center hover:text-black transition">
+          Back to home
+        </a>
+
+         <a href="#contact"
+           class="inline-flex items-center gap-2
+                  px-6 py-3 rounded-xl justify-center
+                  bg-orange-500 text-white font-medium
+                  shadow-[0_8px_30px_rgba(255,153,51,0.55)]
+                  hover:shadow-[0_10px_40px_rgba(255,153,51,0.7)]
+                  transition-all duration-300">
+          See all Works
+        </a>
+      </div>
+
     </div>
 
   </div>
 </nav>
-
+<div class="p-4">
+  <div class=" max-w-[1330px] mx-auto bg-[#f7f7f7] rounded-[32px] border shadow-sm grid-bg">
 
 <!-- HERO SECTION HERO SECTION HERO SECTION HERO SECTION HERO SECTION  -->
 <div id="heroSection" class="max-w-[1330px] mx-auto flex flex-col items-center justify-center text-center px-4 sm:px-6 py-10 sm:py-16
 ">
 
  <h1 class="text-[32px] sm:text-[40px] md:text-[48px] font-extrabold tracking-tight text-black">
-    Krishivatech 
+krishivatech landing page
       </h1>
 
     <!-- META -->
@@ -81,8 +111,8 @@
 ">
 
       <div>
-        <p class=" text-gray-400">Client</p>
-        <p class="mt-2 text-black">Krishivatech</p>
+        <p class=" text-gray-400">Company</p>
+        <p class="mt-2 text-black">krishivatech_landing_page</p>
       </div>
 
        <div>
@@ -97,7 +127,7 @@
 
       <div>
         <p class="text-gray-400">Year</p>
-        <p class="mt-2  text-black">2024</p>
+        <p class="mt-2  text-black">2023</p>
       </div>
 
     </div>
@@ -105,7 +135,6 @@
 
 </div>
 </div>
-
 
 
 <!-- PROJECT DESCRIPTION  PROJECT DESCRIPTION PROJECT DESCRIPTION PROJECT DESCRIPTION -->
@@ -349,7 +378,6 @@ Created a streamlined contact section with a clear “Get in Touch” or “Requ
 <!-- FOOTER   FOOTER  FOOTER  FOOTER  FOOTER  FOOTER -->
 <section class="max-w-[1330px] mx-auto mb-12 mt-20 px-[10px] md:px-[10px] ">
 
-  <!-- Outer Card -->
   <div class="max-w-[1330px] bg-[#f7f7f7] rounded-[22px] border grid-bg relative overflow-hidden">
 
     <!-- Main Content -->
@@ -359,13 +387,12 @@ Created a streamlined contact section with a clear “Get in Touch” or “Requ
              py-14 sm:py-20 md:py-28"
     >
 
-      <!-- EMAIL (FIXED) -->
 <h1
   class="font-extrabold tracking-tight text-center
          text-lg sm:text-xl md:text-2xl lg:text-5xl
          leading-tight
          break-words">
-  meetgoswami842@gmail.com
+ Let's Build Something Great Together!
 </h1>
 
 
@@ -374,29 +401,22 @@ Created a streamlined contact section with a clear “Get in Touch” or “Requ
           text-sm sm:text-base md:text-lg
           text-gray-600
           leading-relaxed">
-  Let’s connect and build something great.
-</p>
+Designing intuitive digital experiences that solve real problems, improve usability, and drive measurable results for your business.</p>
 
 
 
       <!-- CTA BUTTON -->
-     <button
-  class="mt-8
-         flex flex-col sm:flex-row items-center gap-2
-         rounded-lg
-         bg-orange-500
-         px-4 py-2 sm:px-5 sm:py-2.5
-         text-sm sm:text-base
-         text-white font-medium
-         shadow-[0_10px_30px_rgba(255,153,51,0.6)]
-         hover:shadow-[0_12px_40px_rgba(255,153,51,0.75)]
-         transition-all duration-300"
->
-  <span>View Works</span>
-</button>
 
-     
-      </button>
+  <div class="mt-10 flex flex-col sm:flex-row gap-4 relative z-20">
+   <button id="openModal"
+          class="px-6 py-3 rounded-xl
+                 bg-orange-500 text-white font-medium
+                 shadow-[0_8px_30px_rgba(255,153,51,0.55)]
+                 hover:shadow-[0_10px_40px_rgba(255,153,51,0.7)]
+                 transition-all duration-300">
+          Start Your Project
+        </button>
+  </div>
 
     </div>
 
@@ -409,31 +429,113 @@ Created a streamlined contact section with a clear “Get in Touch” or “Requ
 
       <!-- Left Nav -->
       <ul class="flex text-base flex-wrap justify-center  sm:justify-start gap-6 font-medium text-sm">
-        <li class="hover:text-gray-600 cursor-pointer">About</li>
-        <li class="hover:text-gray-600 cursor-pointer">Works</li>
+       <li> <a href="#about-me">About</a></li>
+        <li> <a href="#works">Works</a></li>
         <li class="hover:text-gray-600 cursor-pointer">
-          <a href="assets/Meet_Goswami_Resume.pdf" download>Download CV</a>
+          <a href="assets/Meet_Goswami_Resume.pdf" target="_blank" rel="noopener noreferrer">Download CV</a>
         </li>
       </ul>
 
       <!-- Social Icons -->
 <div class="flex gap-3 sm:gap-4">
+<a href="https://www.linkedin.com/in/meet-goswami-b54562143">
 <img
   src="assets/linkedn.svg"
   alt="Behance"
   class="w-10 h-10 sm:w-20 sm:h-20 md:w-12 md:h-12 lg:w-16 lg:h-16"
 />
- <img
+
+</a>
+ <a href="https://www.behance.net/meetgoswami4"><img
   src="assets/behance.svg"
   alt="Behance"
   class="w-10 h-10 sm:w-20 sm:h-20 md:w-12 md:h-12 lg:w-16 lg:h-16"
-/>
+/></a>
 </div>
 
 
     </div>
 
   </div>
+
+
+
+
+<div id="modal"
+     class="fixed inset-0 bg-black/50 backdrop-blur-sm hidden
+            flex items-center justify-center z-[999] p-4">
+
+  <div class="bg-white w-full max-w-6xl rounded-2xl shadow-2xl
+              relative overflow-y-auto max-h-[90vh]">
+
+    <!-- Close Button -->
+    <button id="closeModal"
+            class="absolute top-4 right-6 text-2xl font-bold">
+      ✕
+    </button>
+
+    <div class="p-10">
+
+      <div class="grid md:grid-cols-2 gap-12 items-center">
+
+        <!-- LEFT SIDE -->
+        <div>
+
+          <h1 class="text-3xl md:text-5xl font-semibold leading-[1.4]">
+            Let’s Turn Your Idea Into Reality
+          </h1>
+
+          <p class="text-gray-600 mt-6 text-base max-w-md">
+Share your project details and I’ll get back to you shortly.          </p>
+
+          <form class="mt-10 space-y-6">
+
+            <div class="grid md:grid-cols-2 gap-6">
+              <div>
+                <label class="block mb-2 text-sm font-medium">Name</label>
+                <input type="text" placeholder="John Doe"
+                  class="w-full rounded-lg px-4 py-3 border border-[#d1d1d1] outline-none focus:ring-2 focus:ring-black/20">
+              </div>
+
+              <div>
+                <label class="block mb-2 text-sm font-medium">Email</label>
+                <input type="email" placeholder="johndoe@gmail.com"
+                  class="w-full rounded-lg px-4 py-3 border border-[#d1d1d1] outline-none focus:ring-2 focus:ring-black/20">
+              </div>
+            </div>
+
+            <div>
+              <label class="block mb-2 text-sm font-medium">Message</label>
+              <textarea rows="4" placeholder="Type a message..."
+                class="w-full rounded-lg px-4 py-3 border border-[#d1d1d1] outline-none focus:ring-2 focus:ring-black/20"></textarea>
+            </div>
+
+            <button
+              class="w-full px-6 py-3 rounded-xl
+                     bg-orange-500 text-white font-medium
+                     shadow-[0_8px_30px_rgba(255,153,51,0.55)]
+                     hover:shadow-[0_10px_40px_rgba(255,153,51,0.7)]
+                     transition-all duration-300">
+              Send Message
+            </button>
+
+          </form>
+
+        </div>
+
+        <!-- RIGHT SIDE -->
+        <div class="hidden md:block">
+          <img src="https://images.unsplash.com/photo-1581092334651-ddf26d9a09d0"
+               class="rounded-2xl w-full object-cover h-[550px]">
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
 
 </section>
 
