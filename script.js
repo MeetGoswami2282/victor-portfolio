@@ -1,5 +1,6 @@
 
-  const openBtn = document.getElementById("openModal");
+
+      const openBtn = document.getElementById("openModal");
   const modal = document.getElementById("modal");
   const closeBtn = document.getElementById("closeModal");
 
@@ -21,9 +22,13 @@
   });
 
 
+
+
+
+
+  
+
 // navbar navbar navbar navbar 
-
-
 
 document.addEventListener("DOMContentLoaded", function () {
 
@@ -49,5 +54,29 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 // Start project pop up
+
+
+  // const openBtn = document.getElementById("openModal");
+  // const modal = document.getElementById("modal");
+  // const closeBtn = document.getElementById("closeModal");
+
+  // openBtn.addEventListener("click", function() {
+  //   modal.classList.remove("hidden");
+  //   document.body.classList.add("overflow-hidden");
+  // });
+
+  // closeBtn.addEventListener("click", function() {
+  //   modal.classList.add("hidden");
+  //   document.body.classList.remove("overflow-hidden");
+  // });
+
+  // modal.addEventListener("click", function(e) {
+  //   if (e.target === modal) {
+  //     modal.classList.add("hidden");
+  //     document.body.classList.remove("overflow-hidden");
+  //   }
+  // });
+
+
 
 

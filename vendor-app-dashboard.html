@@ -4,20 +4,17 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="style.css">
+       <script src="script.js" defer></script>
     <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://cdn.tailwindcss.com"></script>
-
-
-
+  
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
 </head>
-<script src="script.js"></script>
+
 
 <body>
     <!-- NAVBAR NAVBAR NAVBAR NAVBAR -->
 
-<!-- OUTER FRAME -->
 
 
  <nav class="w-full max-w-[1330px] m-auto rounded-lg sticky top-0 z-50 bg-transparent flex justify-center p-4">
@@ -34,10 +31,14 @@
 
       <!-- Logo -->
       <div class="flex items-center gap-3">
+        <a href="index.html">
+
+      
         <div class="w-9 h-9 rounded-full bg-orange-500 flex items-center justify-center text-white font-bold">
           ★
         </div>
-        <span class="font-bold text-lg">Meet</span>
+        <span class="font-bold text-xl font-mono" >Meet</span>
+          </a>
       </div>
 
       <!-- Desktop Right Section -->
@@ -50,15 +51,16 @@
 
         <div class="h-6 w-px bg-gray-300"></div>
 
-        <a href="#contact"
-           class="inline-flex items-center gap-2
-                  px-6 py-3 rounded-xl
-                  bg-orange-500 text-white font-medium
-                  shadow-[0_8px_30px_rgba(255,153,51,0.55)]
-                  hover:shadow-[0_10px_40px_rgba(255,153,51,0.7)]
-                  transition-all duration-300">
-          Let’s Work Together
-        </a>
+        <div class=" flex flex-col sm:flex-row gap-4 relative z-20">
+   <a href="works.html"><button id="openModals"
+          class="px-6 py-3 rounded-xl
+                 bg-orange-500 text-white font-medium
+                 shadow-[0_8px_30px_rgba(255,153,51,0.55)]
+                 hover:shadow-[0_10px_40px_rgba(255,153,51,0.7)]
+                 transition-all duration-300">
+           See all Works
+        </button></a>
+  </div>
 
       </div>
 
@@ -87,7 +89,7 @@
                   shadow-[0_8px_30px_rgba(255,153,51,0.55)]
                   hover:shadow-[0_10px_40px_rgba(255,153,51,0.7)]
                   transition-all duration-300">
-          Let’s Work Together
+          See all Works
         </a>
       </div>
 
@@ -96,7 +98,7 @@
   </div>
 </nav>
 <div class="p-4">
-  <div class="min-h-[50vh] max-w-[1330px] mx-auto bg-[#f7f7f7] rounded-[32px] border shadow-sm grid-bg">
+  <div class=" max-w-[1330px] mx-auto bg-[#f7f7f7] rounded-[32px] border shadow-sm grid-bg">
 
 <!-- HERO SECTION HERO SECTION HERO SECTION HERO SECTION HERO SECTION  -->
 <div id="heroSection" class="max-w-[1330px] mx-auto flex flex-col items-center justify-center text-center px-4 sm:px-6 py-10 sm:py-16
@@ -445,6 +447,8 @@ The solution was built around reducing complexity and creating a more intuitive 
 
 
 <!-- FOOTER   FOOTER  FOOTER  FOOTER  FOOTER  FOOTER -->
+
+
 <section class="max-w-[1330px] mx-auto mb-12 mt-20 px-[10px] md:px-[10px] ">
 
   <div class="max-w-[1330px] bg-[#f7f7f7] rounded-[22px] border grid-bg relative overflow-hidden">
@@ -470,8 +474,7 @@ The solution was built around reducing complexity and creating a more intuitive 
           text-sm sm:text-base md:text-lg
           text-gray-600
           leading-relaxed">
-Ready to create designs that your users will love and your business will benefit from? Contact me today.
-</p>
+Designing intuitive digital experiences that solve real problems, improve usability, and drive measurable results for your business.</p>
 
 
 
@@ -607,34 +610,14 @@ Share your project details and I’ll get back to you shortly.          </p>
 
 </div>
 
-
-
-<!-- ================= SCRIPT ================= -->
-<script>
-  const openBtn = document.getElementById("openModal");
-  const modal = document.getElementById("modal");
-  const closeBtn = document.getElementById("closeModal");
-
-  openBtn.addEventListener("click", function() {
-    modal.classList.remove("hidden");
-    document.body.classList.add("overflow-hidden");
-  });
-
-  closeBtn.addEventListener("click", function() {
-    modal.classList.add("hidden");
-    document.body.classList.remove("overflow-hidden");
-  });
-
-  modal.addEventListener("click", function(e) {
-    if (e.target === modal) {
-      modal.classList.add("hidden");
-      document.body.classList.remove("overflow-hidden");
-    }
-  });
-</script>
-
-
 </section>
+
+
+
+
+  </body>
+
+
 
 
 
